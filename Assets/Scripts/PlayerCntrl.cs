@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerCntrl : MonoBehaviour
 {
@@ -9,11 +10,26 @@ public class PlayerCntrl : MonoBehaviour
     public int directionInput;
     public bool groundCheck;
     public bool facingRight = true;
+    public float spawnX, spawnY;
+    public Text pointsText;
+    public int score=0;
+
+    //находится ли персонаж на земле или в прыжке?
+    private bool isGrounded = false;
+    //ссылка на компонент Transform объекта
+    //для определения соприкосновения с землей
+    public Transform groundCheck1;
+    //радиус определения соприкосновения с землей
+    private float groundRadius = 0.2f;
+    //ссылка на слой, представляющий землю
+    public LayerMask whatIsGround;
 
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        spawnX = transform.position.x;
+        spawnY = transform.position.y;
 
     }
 
@@ -35,6 +51,12 @@ public class PlayerCntrl : MonoBehaviour
     void FixedUpdate()
     {
         rb2d.velocity = new Vector2(playerSpeed * directionInput, rb2d.velocity.y);
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck1.position, groundRadius, whatIsGround);
+
+        if (!isGrounded)
+            return;
+        pointsText.text = "" + score;
     }
 
     public void Move(int InputAxis)
@@ -48,7 +70,7 @@ public class PlayerCntrl : MonoBehaviour
     {
         isJump = groundCheck;
 
-        if (groundCheck)
+        if (isGrounded)
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
         }
@@ -63,5 +85,23 @@ public class PlayerCntrl : MonoBehaviour
         transform.localScale = theScale;
     }
 
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.name == "death") {
+            transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+        }
+    }
 
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.name == "ogurec") {
+            Destroy(col.gameObject);
+            score++;
+        }
+    }
+
+    /*void OnGUI()
+    {
+        GUI.Box(new Rect(0,0,100,100), "Огурец: " + score); 
+    }*/
 }

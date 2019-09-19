@@ -19,6 +19,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -46,6 +47,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9660}
     - Class: 114
+      Script: {instanceID: 9822}
+    - Class: 114
       Script: {instanceID: 9862}
     - Class: 114
       Script: {instanceID: 10260}
@@ -60,6 +63,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11472}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -406,7 +411,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: f245c71b835653006664f921fa0733d3
+      Hash: ac5e53e10a657489b614b729497021e3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCntrl
@@ -503,4 +508,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: E:/Projs/SR/Shaurma Run/sr.apk
+  playerPath: E:/Projs/SR/Shaurma Run/sr4.apk
