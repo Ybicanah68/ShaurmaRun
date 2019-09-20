@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerCntrl : MonoBehaviour
 {
@@ -98,6 +99,15 @@ public class PlayerCntrl : MonoBehaviour
             Destroy(col.gameObject);
             score++;
         }
+    }
+
+    public void RefreshLevel() {
+        SceneManager.LoadScene("firstLevel");
+    }
+
+    public void BactToMenu()
+    {
+        SceneManager.LoadScene("main");
     }
 
     /*void OnGUI()

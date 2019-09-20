@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CamMove.cs" />
+    <Compile Include="Assets\Scripts\MenuControls.cs" />
     <Compile Include="Assets\Scripts\PlayerCntrl.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Projs/SR/Shaurma Run/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
