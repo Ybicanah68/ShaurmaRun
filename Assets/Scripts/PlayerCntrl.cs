@@ -25,6 +25,9 @@ public class PlayerCntrl : MonoBehaviour
     //ссылка на слой, представляющий землю
     public LayerMask whatIsGround;
 
+    public Transform batutCheck;
+    public bool isBatut = false;
+    public LayerMask whatIsBatut;
 
     void Start()
     {
@@ -54,6 +57,11 @@ public class PlayerCntrl : MonoBehaviour
         rb2d.velocity = new Vector2(playerSpeed * directionInput, rb2d.velocity.y);
 
         isGrounded = Physics2D.OverlapCircle(groundCheck1.position, groundRadius, whatIsGround);
+
+        isBatut = Physics2D.OverlapCircle(groundCheck1.position, groundRadius, whatIsBatut);
+
+        if (!isBatut)
+            return;
 
         if (!isGrounded)
             return;
@@ -88,8 +96,17 @@ public class PlayerCntrl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.name == "death") {
-            transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+        switch (col.gameObject.name) {
+            case "death":
+                transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+            break;
+
+            case "batut":
+                if (isBatut)
+                {
+                    rb2d.velocity = new Vector2(rb2d.velocity.x, 25);
+                }
+            break;
         }
     }
 

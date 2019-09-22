@@ -476,7 +476,7 @@ ScriptsOnlyBuild:
     className: MenuControls
   - hash:
       serializedVersion: 2
-      Hash: ac5e53e10a657489b614b729497021e3
+      Hash: 978c1d63167913d4817436290ec20364
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCntrl
