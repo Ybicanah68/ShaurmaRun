@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CamMove.cs" />
+    <Compile Include="Assets\Scripts\menuall.cs" />
     <Compile Include="Assets\Scripts\MenuControls.cs" />
     <Compile Include="Assets\Scripts\PlayerCntrl.cs" />
     <Reference Include="Unity.Timeline.Editor">

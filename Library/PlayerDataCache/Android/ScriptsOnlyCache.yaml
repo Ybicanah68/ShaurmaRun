@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CamMove
     - MenuControls
     - PlayerCntrl
+    - menuall
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -21,10 +22,55 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Text
-    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
+    Assets/Scenes/donate.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9660}
+    - Class: 114
+      Script: {instanceID: 9822}
+    - Class: 114
+      Script: {instanceID: 9862}
+    - Class: 114
+      Script: {instanceID: 10260}
+    - Class: 114
+      Script: {instanceID: 10626}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11474}
+    - Class: 114
+      Script: {instanceID: 20280}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/firstLevel.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -86,6 +132,53 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/help.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9660}
+    - Class: 114
+      Script: {instanceID: 9822}
+    - Class: 114
+      Script: {instanceID: 9862}
+    - Class: 114
+      Script: {instanceID: 10260}
+    - Class: 114
+      Script: {instanceID: 10626}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11474}
+    - Class: 114
+      Script: {instanceID: 20280}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/main.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -110,19 +203,156 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9862}
     - Class: 114
-      Script: {instanceID: 9982}
-    - Class: 114
       Script: {instanceID: 10260}
     - Class: 114
       Script: {instanceID: 10626}
-    - Class: 114
-      Script: {instanceID: 10718}
     - Class: 114
       Script: {instanceID: 11100}
     - Class: 114
       Script: {instanceID: 11320}
     - Class: 114
       Script: {instanceID: 11474}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/settings.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9660}
+    - Class: 114
+      Script: {instanceID: 9822}
+    - Class: 114
+      Script: {instanceID: 9862}
+    - Class: 114
+      Script: {instanceID: 10260}
+    - Class: 114
+      Script: {instanceID: 10626}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11474}
+    - Class: 114
+      Script: {instanceID: 20280}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/skins.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9660}
+    - Class: 114
+      Script: {instanceID: 9822}
+    - Class: 114
+      Script: {instanceID: 9862}
+    - Class: 114
+      Script: {instanceID: 10260}
+    - Class: 114
+      Script: {instanceID: 10626}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11474}
+    - Class: 114
+      Script: {instanceID: 20280}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/upgrade.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9660}
+    - Class: 114
+      Script: {instanceID: 9822}
+    - Class: 114
+      Script: {instanceID: 9862}
+    - Class: 114
+      Script: {instanceID: 10260}
+    - Class: 114
+      Script: {instanceID: 10626}
+    - Class: 114
+      Script: {instanceID: 11100}
+    - Class: 114
+      Script: {instanceID: 11474}
+    - Class: 114
+      Script: {instanceID: 20280}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -570,8 +800,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: menuall
   platform: 13
   scenePathNames:
   - Assets/Scenes/main.unity
   - Assets/Scenes/firstLevel.unity
-  playerPath: E:/Projs/SR/Shaurma Run/sr7.apk
+  - Assets/Scenes/donate.unity
+  - Assets/Scenes/help.unity
+  - Assets/Scenes/settings.unity
+  - Assets/Scenes/skins.unity
+  - Assets/Scenes/upgrade.unity
+  playerPath: E:/Projs/SR/Shaurma Run/sr.apk

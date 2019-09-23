@@ -60,12 +60,13 @@ public class PlayerCntrl : MonoBehaviour
 
         isBatut = Physics2D.OverlapCircle(groundCheck1.position, groundRadius, whatIsBatut);
 
+        pointsText.text = "" + score;
+
         if (!isBatut)
             return;
 
         if (!isGrounded)
             return;
-        pointsText.text = "" + score;
     }
 
     public void Move(int InputAxis)

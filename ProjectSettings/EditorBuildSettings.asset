@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/firstLevel.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/donate.unity
+    guid: dbbbbe0dce115fd4296d7b59fe4ab45b
+  - enabled: 1
+    path: Assets/Scenes/help.unity
+    guid: e926b8f53ebfc1640ba4845afda7592b
+  - enabled: 1
+    path: Assets/Scenes/settings.unity
+    guid: b449f5fd501fcb64c8eb37e39115f230
+  - enabled: 1
+    path: Assets/Scenes/skins.unity
+    guid: fff186dd5b0cb5f44ab0a326415f4057
+  - enabled: 1
+    path: Assets/Scenes/upgrade.unity
+    guid: 71414dee40bdec849aa382eec21acc3c
   m_configObjects: {}
