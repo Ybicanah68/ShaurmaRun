@@ -38,8 +38,17 @@ public class PlayerCntrl : MonoBehaviour
     }
 
 
-    void Update()
-    {
+    void Update()   
+    {   /*
+        float moveX = Input.GetAxis("Horizontal");
+        rb2d.MovePosition(rb2d.position+Vector2.right*moveX*playerSpeed*Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            rb2d.AddForce(Vector2.up * 8000);
+        }
+        */
+
+
         if ((directionInput < 0) && (facingRight))
         {
             Flip();
@@ -99,6 +108,10 @@ public class PlayerCntrl : MonoBehaviour
     {
         switch (col.gameObject.name) {
             case "death":
+                transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+            break;
+
+            case "tarakan":
                 transform.position = new Vector3(spawnX, spawnY, transform.position.z);
             break;
 
