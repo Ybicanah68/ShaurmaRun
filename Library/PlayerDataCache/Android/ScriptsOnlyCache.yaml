@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CamMove
+    - Joystic_controller
     - Levels
     - MenuControls
     - PlayerCntrl
@@ -52,13 +53,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -107,19 +108,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10484}
     - Class: 114
-      Script: {instanceID: 10714}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 10718}
     - Class: 114
-      Script: {instanceID: 11342}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11452}
     - Class: 114
-      Script: {instanceID: 16998}
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 13474}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -162,13 +165,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -209,13 +212,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 10642}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 13620}
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -256,13 +259,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 11332}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -303,13 +306,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -350,13 +353,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -397,13 +400,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10266}
     - Class: 114
-      Script: {instanceID: 10618}
+      Script: {instanceID: 10620}
     - Class: 114
-      Script: {instanceID: 10634}
+      Script: {instanceID: 10636}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 11112}
     - Class: 114
-      Script: {instanceID: 11482}
+      Script: {instanceID: 11486}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -625,6 +628,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 3a5e805a974c0406a5d27e9c62f07b2d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Razboinik
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -653,6 +662,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Levels
   - hash:
       serializedVersion: 2
       Hash: 92da9881aed190e8bb74661bcd74aa2c
@@ -859,16 +874,16 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 4a803ef0d545ca8bd492322ce3d47daa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Levels
+    className: Joystic_controller
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: fc96fa996885c02e04cf9c7f324a3fd1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Razboinik
+    className: Square_green_controller
   platform: 13
   scenePathNames:
   - Assets/Scenes/main.unity

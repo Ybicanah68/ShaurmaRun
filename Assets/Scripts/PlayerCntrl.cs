@@ -29,6 +29,8 @@ public class PlayerCntrl : MonoBehaviour
     public bool isBatut = false;
     public LayerMask whatIsBatut;
 
+    //public Vector3 target_move;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -47,7 +49,7 @@ public class PlayerCntrl : MonoBehaviour
             rb2d.AddForce(Vector2.up * 8000);
         }
         */
-
+        //transform.Translate(target_move * playerSpeed * Time.deltaTime);
 
         if ((directionInput < 0) && (facingRight))
         {
