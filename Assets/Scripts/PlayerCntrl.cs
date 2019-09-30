@@ -31,12 +31,23 @@ public class PlayerCntrl : MonoBehaviour
 
     //public Vector3 target_move;
 
+    //helths
+    public int health;
+    public int lives;
+    public Image[] ilives;
+    public Sprite fullLive;
+    public Sprite emptyLive;
+
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         spawnX = transform.position.x;
         spawnY = transform.position.y;
-
+        if (PlayerPrefs.HasKey("health"))
+        {
+            health = PlayerPrefs.GetInt("health");
+        }
     }
 
 
@@ -72,6 +83,32 @@ public class PlayerCntrl : MonoBehaviour
         isBatut = Physics2D.OverlapCircle(groundCheck1.position, groundRadius, whatIsBatut);
 
         pointsText.text = "" + score;
+
+        for (int i = 0; i < ilives.Length; i++)
+        {
+            if (i < health)
+            {
+                ilives[i].sprite = fullLive;
+            }
+            else
+            {
+                ilives[i].sprite = emptyLive;
+            }
+
+            if (i < lives)
+            {
+                ilives[i].enabled = true;
+            }
+            else
+            {
+                ilives[i].enabled = false;
+            }
+        }
+
+        if (health == 0)
+        {
+            SceneManager.LoadScene("gameOver");
+        }
 
         if (!isBatut)
             return;
@@ -110,10 +147,12 @@ public class PlayerCntrl : MonoBehaviour
     {
         switch (col.gameObject.name) {
             case "death":
+                health--;
                 transform.position = new Vector3(spawnX, spawnY, transform.position.z);
             break;
 
             case "tarakan":
+                health--;
                 transform.position = new Vector3(spawnX, spawnY, transform.position.z);
             break;
 
@@ -135,11 +174,13 @@ public class PlayerCntrl : MonoBehaviour
     }
 
     public void RefreshLevel() {
+        PlayerPrefs.DeleteKey("health");
         SceneManager.LoadScene("firstLevel");
     }
 
     public void BactToMenu()
     {
+        PlayerPrefs.SetInt("health", health);
         SceneManager.LoadScene("main");
     }
 

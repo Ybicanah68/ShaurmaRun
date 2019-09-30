@@ -18,11 +18,11 @@ public class Joystic_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        //if (Input.GetMouseButton(0))
-        if (Input.touchCount > 0)
+        if (Input.GetMouseButton(0))
+        //if (Input.touchCount > 0)
         {
-            //Vector3 touch_pos = Input.mousePosition;
-            Vector3 touch_pos = Input.GetTouch(0).position;
+            Vector3 touch_pos = Input.mousePosition;
+            //Vector3 touch_pos = Input.GetTouch(0).position;
             target_vector = touch_pos - transform.position;
 
             if (target_vector.magnitude < 100)
