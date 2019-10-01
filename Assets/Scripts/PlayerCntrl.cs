@@ -38,6 +38,10 @@ public class PlayerCntrl : MonoBehaviour
     public Sprite fullLive;
     public Sprite emptyLive;
 
+    //fire
+    public Transform FirePoint;
+    public GameObject bullet;
+
 
     void Start()
     {
@@ -138,9 +142,10 @@ public class PlayerCntrl : MonoBehaviour
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
+        /*Vector3 theScale = transform.localScale;
         theScale.x *= -1;
-        transform.localScale = theScale;
+        transform.localScale = theScale;*/
+        transform.Rotate(0f, 180f, 0f);
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -182,6 +187,10 @@ public class PlayerCntrl : MonoBehaviour
     {
         PlayerPrefs.SetInt("health", health);
         SceneManager.LoadScene("main");
+    }
+
+    public void Shoot() {
+        Instantiate(bullet,FirePoint.position,FirePoint.rotation);
     }
 
     /*void OnGUI()

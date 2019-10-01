@@ -8,6 +8,8 @@ public class Razboinik : MonoBehaviour
     float maxX, minX;
     public bool facingRight = false;
 
+    public int health=3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +41,13 @@ public class Razboinik : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    public void TakeDamage(int damage) {
+        health -= damage;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
