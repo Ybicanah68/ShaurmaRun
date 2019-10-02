@@ -172,9 +172,16 @@ public class PlayerCntrl : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name == "ogurec") {
-            Destroy(col.gameObject);
-            score++;
+        switch (col.gameObject.name)
+        {
+            case "ogurec":
+                Destroy(col.gameObject);
+                score++;
+            break;
+
+            case "flag":
+                SceneManager.LoadScene("Level2");
+            break;
         }
     }
 

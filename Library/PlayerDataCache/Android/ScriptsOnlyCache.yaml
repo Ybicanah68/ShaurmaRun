@@ -29,6 +29,51 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/Level2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9666}
+    - Class: 114
+      Script: {instanceID: 9828}
+    - Class: 114
+      Script: {instanceID: 10266}
+    - Class: 114
+      Script: {instanceID: 11116}
+    - Class: 114
+      Script: {instanceID: 11494}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/donate.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -61,7 +106,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -120,13 +165,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11352}
+      Script: {instanceID: 11216}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11354}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 14090}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,7 +220,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -222,7 +267,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -269,7 +314,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -314,9 +359,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11338}
+      Script: {instanceID: 11340}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -363,7 +408,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -410,7 +455,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -457,7 +502,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11116}
     - Class: 114
-      Script: {instanceID: 11492}
+      Script: {instanceID: 11494}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -823,6 +868,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: b45695066fd01e348a8c6b43f8bf002c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: bullet
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -941,12 +992,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: b45695066fd01e348a8c6b43f8bf002c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: bullet
   platform: 13
   scenePathNames:
   - Assets/Scenes/main.unity
@@ -958,4 +1003,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/upgrade.unity
   - Assets/Scenes/levels.unity
   - Assets/Scenes/gameOver.unity
+  - Assets/Scenes/Level2.unity
   playerPath: E:/Projs/SR/Shaurma Run/sr.apk
