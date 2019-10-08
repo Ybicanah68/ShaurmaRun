@@ -42,6 +42,9 @@ public class PlayerCntrl : MonoBehaviour
     public Transform FirePoint;
     public GameObject bullet;
 
+    public int level;
+    public int newlevel;
+
 
     void Start()
     {
@@ -51,6 +54,14 @@ public class PlayerCntrl : MonoBehaviour
         if (PlayerPrefs.HasKey("health"))
         {
             health = PlayerPrefs.GetInt("health");
+        }
+        if (PlayerPrefs.HasKey("level"))
+        {
+            level = PlayerPrefs.GetInt("level");
+        }
+        else
+        {
+            level = 1;
         }
     }
 
@@ -180,7 +191,9 @@ public class PlayerCntrl : MonoBehaviour
             break;
 
             case "flag":
-                SceneManager.LoadScene("Level2");
+                newlevel = level + 1;
+                PlayerPrefs.SetInt("level", newlevel);
+                SceneManager.LoadScene("Level"+newlevel);
             break;
         }
     }

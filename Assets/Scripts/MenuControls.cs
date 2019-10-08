@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuControls : MonoBehaviour
 {
+    private void Start()
+    {
+        if (!PlayerPrefs.HasKey("level"))
+        {
+            PlayerPrefs.SetInt("level", 1);
+        }
+    }
     public void PlayPressed()
     {
         SceneManager.LoadScene("levels");
