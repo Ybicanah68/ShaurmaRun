@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerCntrl : MonoBehaviour
 {
@@ -44,25 +45,38 @@ public class PlayerCntrl : MonoBehaviour
 
     public int level;
     public int newlevel;
+    public string sname;
+    public string lsnumber;
 
+    public bool move=false;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         spawnX = transform.position.x;
         spawnY = transform.position.y;
+        sname = SceneManager.GetActiveScene().name;
+        if (sname == "firstLevel")
+        {
+            level = 1;
+        }
+        else
+        {
+            lsnumber=((sname).Replace("Level", ""));
+            level = Int32.Parse(lsnumber);
+        }
         if (PlayerPrefs.HasKey("health"))
         {
             health = PlayerPrefs.GetInt("health");
         }
-        if (PlayerPrefs.HasKey("level"))
+        /*if (PlayerPrefs.HasKey("level"))
         {
             level = PlayerPrefs.GetInt("level");
         }
         else
         {
             level = 1;
-        }
+        }*/
     }
 
 
@@ -142,12 +156,12 @@ public class PlayerCntrl : MonoBehaviour
     public void Jump(bool isJump)
     {
         isJump = groundCheck;
-
+        move = true;
         if (isGrounded)
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpPower);
+            move = true;
         }
-
     }
 
     void Flip()
@@ -195,6 +209,35 @@ public class PlayerCntrl : MonoBehaviour
                 PlayerPrefs.SetInt("level", newlevel);
                 SceneManager.LoadScene("Level"+newlevel);
             break;
+        }
+
+        /*if (col.gameObject.tag == "Platform")
+        {
+            transform.SetParent(col.transform);
+        }
+        else
+        {
+            transform.SetParent(null);
+        }*/
+    }
+
+    /*private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Platform")
+        {
+            transform.SetParent(null);
+        }
+    }*/
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Platform" && !move)
+        {
+            transform.SetParent(collision.transform);
+        }
+        else
+        {
+            transform.SetParent(null);
         }
     }
 

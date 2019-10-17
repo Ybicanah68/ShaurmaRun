@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Levels.cs" />
     <Compile Include="Assets\Scripts\menuall.cs" />
     <Compile Include="Assets\Scripts\MenuControls.cs" />
+    <Compile Include="Assets\Scripts\platforma.cs" />
     <Compile Include="Assets\Scripts\PlayerCntrl.cs" />
     <Compile Include="Assets\Scripts\Razboinik.cs" />
     <Compile Include="Assets\Scripts\Square_green_controller.cs" />

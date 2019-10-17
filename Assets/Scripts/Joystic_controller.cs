@@ -32,10 +32,12 @@ public class Joystic_controller : MonoBehaviour
                 if (target_vector.x < 0)
                 {
                     sg_controller.directionInput = -1;
+                    sg_controller.move = true;
                 }
                 else
                 {
                     sg_controller.directionInput = 1;
+                    sg_controller.move = true;
                 }
             }
         }
@@ -43,6 +45,7 @@ public class Joystic_controller : MonoBehaviour
         {
             touch_marker.transform.position = transform.position;
             sg_controller.directionInput = 0;
+            sg_controller.move = false;
         }
     }
 }
