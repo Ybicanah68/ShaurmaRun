@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\NewScriptes\bullet.cs" />
     <Compile Include="Assets\NewScriptes\CamMove.cs" />
+    <Compile Include="Assets\NewScriptes\CGameOver.cs" />
     <Compile Include="Assets\NewScriptes\CPlayer.cs" />
     <Compile Include="Assets\NewScriptes\Joystic_controller.cs" />
     <Compile Include="Assets\NewScriptes\Levels.cs" />

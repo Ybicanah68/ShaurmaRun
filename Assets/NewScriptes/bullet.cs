@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 125f;
     public Rigidbody2D rb;
     public float fireX, firenowX;
 
@@ -18,7 +18,7 @@ public class bullet : MonoBehaviour
     void Update()
     {
         firenowX = Mathf.Abs(rb.position.x - fireX);
-        if (firenowX > 30) {
+        if (firenowX > 7) {
             Destroy(gameObject);
         }
     }

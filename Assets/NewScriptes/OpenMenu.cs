@@ -20,4 +20,8 @@ public class OpenMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void BactToMenu()
+    {
+        SceneManager.LoadScene("main");
+    }
 }

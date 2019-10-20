@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.EventSystems;
 
 public class CPlayer : MonoBehaviour
 {
@@ -50,6 +51,7 @@ public class CPlayer : MonoBehaviour
 
     /*меню*/
     public GameObject openmenu;
+    public GameObject gameover;
     public Transform MenuPoint;
     /*меню*/
 
@@ -102,11 +104,6 @@ public class CPlayer : MonoBehaviour
             {
                 ilives[i].enabled = false;
             }
-        }
-
-        if (health == 0)
-        {
-            SceneManager.LoadScene("gameOver");
         }
     }
     void FixedUpdate()
@@ -161,11 +158,19 @@ public class CPlayer : MonoBehaviour
         {
             case "death":
                 health--;
+                if (health == 0)
+                {
+                    Instantiate(gameover, MenuPoint.position, MenuPoint.rotation);
+                }
                 transform.position = new Vector3(spawnX, spawnY, transform.position.z);
             break;
 
             case "tarakan":
                 health--;
+                if (health == 0)
+                {
+                    Instantiate(gameover, MenuPoint.position, MenuPoint.rotation);
+                }
                 transform.position = new Vector3(spawnX, spawnY, transform.position.z);
             break;
         }
