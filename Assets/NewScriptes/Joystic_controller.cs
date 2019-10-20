@@ -7,7 +7,7 @@ public class Joystic_controller : MonoBehaviour
 
     public GameObject touch_marker;
     Vector3 target_vector;
-    public PlayerCntrl sg_controller;
+    public CPlayer sg_controller;
 
     // Start is called before the first frame update
     void Start()

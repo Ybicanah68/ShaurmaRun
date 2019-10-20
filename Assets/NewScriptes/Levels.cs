@@ -30,14 +30,7 @@ public class Levels : MonoBehaviour
 
     public void LevelPressed(GameObject levelButton)
     {
-        if (levelButton.name == "Level1")
-        {
-            SceneManager.LoadScene("firstLevel");
-        }
-        else
-        {
-            SceneManager.LoadScene(levelButton.name);
-        }
+         SceneManager.LoadScene(levelButton.name);
     }
 
     public void BactToMenu()

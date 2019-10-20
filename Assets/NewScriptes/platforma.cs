@@ -28,6 +28,6 @@ public class platforma : MonoBehaviour
             direction = 1;
         }
 
-        transform.Translate(new Vector3(direction * 5f * Time.deltaTime, 0, 0));
+        transform.Translate(new Vector3(direction * 4f * Time.deltaTime, 0, 0));
     }
 }

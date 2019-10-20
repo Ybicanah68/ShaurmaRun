@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2859878029688580242}
   m_Layer: 0
   m_Name: tarakan
-  m_TagString: Untagged
+  m_TagString: tarakan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facingRight: 1
+  health: 3

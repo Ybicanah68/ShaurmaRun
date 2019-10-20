@@ -62,16 +62,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\bullet.cs" />
-    <Compile Include="Assets\Scripts\CamMove.cs" />
+    <Compile Include="Assets\NewScriptes\bullet.cs" />
+    <Compile Include="Assets\NewScriptes\CamMove.cs" />
+    <Compile Include="Assets\NewScriptes\CPlayer.cs" />
+    <Compile Include="Assets\NewScriptes\Joystic_controller.cs" />
+    <Compile Include="Assets\NewScriptes\Levels.cs" />
+    <Compile Include="Assets\NewScriptes\MenuControls.cs" />
+    <Compile Include="Assets\NewScriptes\OpenMenu.cs" />
+    <Compile Include="Assets\NewScriptes\platforma.cs" />
+    <Compile Include="Assets\NewScriptes\Razboinik.cs" />
     <Compile Include="Assets\Scripts\gameOver.cs" />
-    <Compile Include="Assets\Scripts\Joystic_controller.cs" />
-    <Compile Include="Assets\Scripts\Levels.cs" />
     <Compile Include="Assets\Scripts\menuall.cs" />
-    <Compile Include="Assets\Scripts\MenuControls.cs" />
-    <Compile Include="Assets\Scripts\platforma.cs" />
     <Compile Include="Assets\Scripts\PlayerCntrl.cs" />
-    <Compile Include="Assets\Scripts\Razboinik.cs" />
     <Compile Include="Assets\Scripts\Square_green_controller.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/Projs/SR/Shaurma Run/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

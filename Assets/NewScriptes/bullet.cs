@@ -29,7 +29,7 @@ public class bullet : MonoBehaviour
         if (tarakan != null) {
             tarakan.TakeDamage(1);
         }
-        if (hitInfo.gameObject.name == "tarakan" || hitInfo.gameObject.name == "shrek")
+        if (hitInfo.gameObject.tag == "tarakan")
         {
             Destroy(gameObject);
         }
