@@ -52,12 +52,16 @@ public class CPlayer : MonoBehaviour
     /*меню*/
     public GameObject openmenu;
     public GameObject gameover;
+    public GameObject levelmenu;
+    public GameObject startlevel;
     public Transform MenuPoint;
+    public bool joys=true;
     /*меню*/
 
     // Start is called before the first frame update
     void Start()
     {
+        Destroy(Instantiate(startlevel, MenuPoint.position, MenuPoint.rotation), 2f);
         rb2d = GetComponent<Rigidbody2D>();
 
         spawnX = transform.position.x;
@@ -142,12 +146,8 @@ public class CPlayer : MonoBehaviour
             break;
 
             case "flag":
-                newlevel = level + 1;
-                if (PlayerPrefs.HasKey("level") && PlayerPrefs.GetInt("level")<newlevel)
-                {
-                    PlayerPrefs.SetInt("level", newlevel);
-                }
-                SceneManager.LoadScene("Level" + newlevel);
+                joys = false;
+                Instantiate(levelmenu, MenuPoint.position, MenuPoint.rotation);
             break;
         }
     }
@@ -160,6 +160,7 @@ public class CPlayer : MonoBehaviour
                 health--;
                 if (health == 0)
                 {
+                    joys = false;
                     Instantiate(gameover, MenuPoint.position, MenuPoint.rotation);
                 }
                 transform.position = new Vector3(spawnX, spawnY, transform.position.z);
@@ -169,6 +170,7 @@ public class CPlayer : MonoBehaviour
                 health--;
                 if (health == 0)
                 {
+                    joys = false;
                     Instantiate(gameover, MenuPoint.position, MenuPoint.rotation);
                 }
                 transform.position = new Vector3(spawnX, spawnY, transform.position.z);

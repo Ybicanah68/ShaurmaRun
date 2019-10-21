@@ -7,6 +7,8 @@ ScriptsOnlyBuild:
     - Joystic_controller
     - Levels
     - MenuControls
+    - NewLevel
+    - NowLevel
     - OpenMenu
     - PlayerCntrl
     - Razboinik
@@ -276,6 +278,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 18440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -347,6 +353,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 18440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -418,6 +428,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 18440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -489,6 +503,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 18440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -560,6 +578,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 18440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -631,6 +653,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 18440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -702,6 +728,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 18440}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -763,8 +793,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11122}
     - Class: 114
       Script: {instanceID: 11158}
-    - Class: 114
-      Script: {instanceID: 11224}
     - Class: 114
       Script: {instanceID: 11362}
     - Class: 114
@@ -1200,7 +1228,7 @@ ScriptsOnlyBuild:
     className: Razboinik
   - hash:
       serializedVersion: 2
-      Hash: 68256e4ae645898608c4e4ad2971c3f1
+      Hash: a2f3b37d6943374534aa1dcbcf59d199
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CPlayer
@@ -1474,6 +1502,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f00edcf3fb326d16c7691be6dc978f9d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NewLevel
+  - hash:
+      serializedVersion: 2
+      Hash: 7ad0feb3fed755d428fe7123379e4e3c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NowLevel
   platform: 13
   scenePathNames:
   - Assets/Scenes/main.unity

@@ -69,6 +69,8 @@
     <Compile Include="Assets\NewScriptes\Joystic_controller.cs" />
     <Compile Include="Assets\NewScriptes\Levels.cs" />
     <Compile Include="Assets\NewScriptes\MenuControls.cs" />
+    <Compile Include="Assets\NewScriptes\NewLevel.cs" />
+    <Compile Include="Assets\NewScriptes\NowLevel.cs" />
     <Compile Include="Assets\NewScriptes\OpenMenu.cs" />
     <Compile Include="Assets\NewScriptes\platforma.cs" />
     <Compile Include="Assets\NewScriptes\Razboinik.cs" />

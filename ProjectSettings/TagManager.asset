@@ -9,6 +9,7 @@ TagManager:
   - death
   - tarakan
   - flag
+  - openmenu
   layers:
   - Default
   - TransparentFX
