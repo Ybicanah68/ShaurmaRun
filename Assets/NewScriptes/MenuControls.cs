@@ -5,11 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class MenuControls : MonoBehaviour
 {
+    private AudioSource zvuk;
     private void Start()
     {
+        zvuk = GetComponent<AudioSource>();
         if (!PlayerPrefs.HasKey("level"))
         {
             PlayerPrefs.SetInt("level", 1);
+        }
+        if (!PlayerPrefs.HasKey("sound"))
+        {
+            PlayerPrefs.SetInt("sound", 1);
+        }
+        if (PlayerPrefs.GetInt("sound")==1)
+        {
+            zvuk.Play();
         }
     }
     public void PlayPressed()

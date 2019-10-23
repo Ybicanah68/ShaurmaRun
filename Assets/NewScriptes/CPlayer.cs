@@ -58,9 +58,14 @@ public class CPlayer : MonoBehaviour
     public bool joys=true;
     /*меню*/
 
+    /*звуки*/
+    private AudioSource[] zvuk;
+    /*звуки*/
+
     // Start is called before the first frame update
     void Start()
     {
+        zvuk = GetComponents<AudioSource>();
         Destroy(Instantiate(startlevel, MenuPoint.position, MenuPoint.rotation), 2f);
         rb2d = GetComponent<Rigidbody2D>();
 
@@ -163,7 +168,14 @@ public class CPlayer : MonoBehaviour
                     joys = false;
                     Instantiate(gameover, MenuPoint.position, MenuPoint.rotation);
                 }
-                transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+                else
+                {
+                    if (PlayerPrefs.GetInt("sound")==1)
+                    {
+                        zvuk[1].Play();
+                    }
+                    transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+                }
             break;
 
             case "tarakan":
@@ -173,8 +185,23 @@ public class CPlayer : MonoBehaviour
                     joys = false;
                     Instantiate(gameover, MenuPoint.position, MenuPoint.rotation);
                 }
-                transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+                else
+                {
+                    if (PlayerPrefs.GetInt("sound") == 1)
+                    {
+                        zvuk[1].Play();
+                    }
+                    transform.position = new Vector3(spawnX, spawnY, transform.position.z);
+                }
             break;
+
+            case "tupik":
+                if (PlayerPrefs.GetInt("sound") == 1)
+                {
+                    zvuk[2].Play();
+                }
+                break;
+
         }
     }
     private void OnCollisionStay2D(Collision2D collision)
@@ -190,6 +217,10 @@ public class CPlayer : MonoBehaviour
     }
     public void Shoot()
     {
+        if (PlayerPrefs.GetInt("sound") == 1)
+        {
+            zvuk[0].Play();
+        }
         Instantiate(bullet, FirePoint.position, FirePoint.rotation);
     }
     public void OpenMenu()
